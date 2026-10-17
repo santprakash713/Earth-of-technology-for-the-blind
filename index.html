@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Download Earth of Technology for the Blind app</title>
+
+  <style>
+    :root {
+      --bg-dark: #0b0f19;
+      --card-bg: #151c2e;
+      --border-color: #232f4a;
+      --primary: #38bdf8;
+      --primary-hover: #0284c7;
+      --accent-green: #22c55e;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 16px;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .app-container {
+      width: 100%;
+      max-width: 480px;
+      background: var(--card-bg);
+      border: 1.5px solid var(--border-color);
+      border-radius: 24px;
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: auto 0;
+    }
+
+    .main-heading {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-align: center;
+      line-height: 1.3;
+      outline: none;
+    }
+
+    .section-heading {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--text-main);
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+      margin-top: 10px;
+      outline: none;
+    }
+
+    .content-block {
+      background: #0b0f19;
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 16px;
+      font-size: 0.98rem;
+      line-height: 1.55;
+      color: var(--text-muted);
+      outline: none;
+    }
+
+    .content-block:focus-visible {
+      outline: 2px solid var(--primary);
+      color: var(--text-main);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 16px;
+      border-radius: 14px;
+      border: none;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      outline: none;
+      text-decoration: none;
+      box-shadow: 0 4px 0 rgba(0,0,0,0.3);
+      transition: transform 0.08s ease;
+      text-align: center;
+    }
+
+    .btn:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+    }
+
+    .btn:focus-visible {
+      outline: 2px solid #ffffff;
+    }
+
+    .btn-download {
+      background: var(--accent-green);
+      color: #0b0f19;
+      font-size: 1.15rem;
+      box-shadow: 0 4px 0 #15803d;
+    }
+
+    .btn-download:active {
+      box-shadow: 0 2px 0 #15803d;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: #0b0f19;
+    }
+
+    .btn-telegram {
+      background: #229ed9;
+      color: #ffffff;
+    }
+
+    .btn-youtube {
+      background: #ff0000;
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      background: #1e293b;
+      color: var(--primary);
+      border: 1px solid var(--border-color);
+    }
+
+    .connect-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-thank-text {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-align: center;
+      padding: 12px 0;
+      line-height: 1.4;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Screen Reader Live Announcer -->
+  <div id="srAnnouncer" class="sr-only" aria-live="assertive" aria-atomic="true"></div>
+
+  <main class="app-container" role="application">
+    
+    <!-- Heading -->
+    <h1 class="main-heading" tabindex="0">App Name "Earth of Technology for the Blind"</h1>
+
+    <!-- Description Paragraph -->
+    <div class="content-block" tabindex="0">
+      This app is very excellent. By downloading this application you can chat with other users of the application via voice messages and text messages. You can explore different amazing tools like Translator, Your Age Calculator and many other excellent things. In Games and Entertainment section you can enjoy lots of our amazing games. And in Chat Zone you can put your technology related problems in front of us and get their solutions.
+    </div>
+
+    <!-- Download Instruction -->
+    <div class="content-block" tabindex="0" style="text-align: center; font-weight: 600; color: var(--primary);">
+      Please click on the download button given below and download the application
+    </div>
+
+    <!-- Download Button (Blob Direct Download - No redirection to archive.org) -->
+    <button type="button" class="btn btn-download" id="btnDownloadApp" onclick="triggerDirectApkDownload()" aria-label="Download Earth of Technology for the Blind application">
+      📥 Download Application Now
+    </button>
+
+    <!-- Connect With Us Section -->
+    <h2 class="section-heading" tabindex="0">Connect With Us</h2>
+
+    <div class="connect-group">
+      <!-- a) Contact Developer -->
+      <a href="https://wa.me/919236927156" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" aria-label="Contact Developer via WhatsApp">
+        💬 Contact Developer
+      </a>
+
+      <!-- b) Join WhatsApp Group -->
+      <a href="https://chat.whatsapp.com/HPYRo2BzQK8Ecj1kmWSBpK?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" aria-label="Join My WhatsApp Group">
+        👥 Join My WhatsApp Group
+      </a>
+
+      <!-- c) Join WhatsApp Channel -->
+      <a href="https://whatsapp.com/channel/0029Vb5yEeNEquiT0ZzCjl04" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" aria-label="Join My WhatsApp Channel">
+        📢 Join My WhatsApp Channel
+      </a>
+
+      <!-- d) Join Telegram Group -->
+      <a href="https://t.me/Earthoftechnologyfortheblind77" target="_blank" rel="noopener noreferrer" class="btn btn-telegram" aria-label="Join My Telegram Group">
+        ✈️ Join My Telegram Group
+      </a>
+
+      <!-- e) Join Telegram Channel -->
+      <a href="https://t.me/Earthoftechnologyfortheblind" target="_blank" rel="noopener noreferrer" class="btn btn-telegram" aria-label="Join My Telegram Channel">
+        📢 Join My Telegram Channel
+      </a>
+
+      <!-- f) Subscribe YouTube Channel -->
+      <a href="https://www.youtube.com/@Earthoftechnologyfortheblind77" target="_blank" rel="noopener noreferrer" class="btn btn-youtube" aria-label="Subscribe to My YouTube Channel Earth of Technology for the Blind">
+        ▶️ Subscribe to My YouTube Channel Earth of Technology for the Blind
+      </a>
+    </div>
+
+    <!-- Footer Thank You Text -->
+    <div class="footer-thank-text" tabindex="0">
+      Thank you very much for connecting with us and for supporting us
+    </div>
+
+  </main>
+
+  <script>
+    const srAnnouncer = document.getElementById('srAnnouncer');
+    const directApkUrl = "https://archive.org/download/earth-of-technology-for-the-blind/Earth%20of%20technology%20for%20the%20blind.apk";
+
+    function speakSr(text) {
+      if (!srAnnouncer) return;
+      srAnnouncer.textContent = "";
+      setTimeout(() => { srAnnouncer.textContent = text; }, 30);
+    }
+
+    async function triggerDirectApkDownload() {
+      const btn = document.getElementById('btnDownloadApp');
+      btn.disabled = true;
+      btn.textContent = "Preparing Download...";
+      speakSr("Preparing download, please wait...");
+
+      try {
+        const response = await fetch(directApkUrl);
+        if (!response.ok) throw new Error('Network response was not ok');
+        
+        const blob = await response.blob();
+        const blobUrl = window.URL.createObjectURL(blob);
+        
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = blobUrl;
+        a.download = 'Earth_of_technology_for_the_blind.apk';
+        
+        document.body.appendChild(a);
+        a.click();
+        
+        window.URL.revokeObjectURL(blobUrl);
+        document.body.removeChild(a);
+
+        btn.disabled = false;
+        btn.textContent = "📥 Download Application Now";
+        speakSr("Download started successfully.");
+      } catch (err) {
+        // Fallback to direct anchor download if CORS blob blocks
+        const fallbackAnchor = document.createElement('a');
+        fallbackAnchor.href = directApkUrl;
+        fallbackAnchor.setAttribute('download', 'Earth_of_technology_for_the_blind.apk');
+        fallbackAnchor.target = '_blank';
+        document.body.appendChild(fallbackAnchor);
+        fallbackAnchor.click();
+        document.body.removeChild(fallbackAnchor);
+
+        btn.disabled = false;
+        btn.textContent = "📥 Download Application Now";
+        speakSr("Download initiated.");
+      }
+    }
+  </script>
+</body>
+</html>
